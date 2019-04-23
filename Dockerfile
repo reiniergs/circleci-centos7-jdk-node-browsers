@@ -34,7 +34,7 @@ RUN curl -o /usr/bin/cfssljson https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
 RUN curl -o /usr/bin/cfssl https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
 
 # Install Node
-RUN curl -sL https://rpm.nodesource.com/setup_9.x | sudo bash -
+RUN curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 RUN yum install -y nodejs
 RUN node -v
 RUN npm -v
