@@ -1,6 +1,7 @@
 
 FROM		centos:7
-MAINTAINER 	Reinier Guerra "reiniergs@gmail.com"
+LABEL maintaner.name="Reinier Guerra" 
+LABEL maintaner.email="reiniergs@gmail.com"
 
 # Install needed software and users
 USER root
