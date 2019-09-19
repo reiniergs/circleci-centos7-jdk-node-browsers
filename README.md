@@ -7,6 +7,7 @@
  - Yarn 1.17.3
  - gcc
  - Chrome
+ - gcc-c++
 
 ## Utilities
 
