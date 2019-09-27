@@ -29,6 +29,13 @@ RUN unzip /root/tmp/chromedriver/2.37/chromedriver-2.37-linux64.zip -d /bin
 RUN chmod -R 0755 /bin/chromedriver
 ENV PATH /bin/chromedriver:$PATH
 
+# Hub (GitHub CLI Wrapper)
+RUN mkdir -p /root/tmp/hub
+ADD hub-linux-amd64-2.12.7.tgz /root/tmp/hub/
+RUN cp /root/tmp/hub/hub-linux-amd64-2.12.7/bin/hub /bin
+RUN chmod -R 0755 /bin/hub
+ENV PATH /bin/hub:$PATH
+
 RUN echo "%circleci        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
 
 # Install CFSSL

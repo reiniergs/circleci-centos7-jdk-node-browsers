@@ -13,6 +13,7 @@
 
 - Git
 - Curl
+- Hub
 
 ## Working locally 
 
