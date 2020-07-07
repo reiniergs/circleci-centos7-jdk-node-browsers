@@ -15,7 +15,19 @@
 - Curl
 - Hub
 
-## Working locally 
+## Working locally
+
+### Updating
+To download the latest version of Chrome:
+```
+# Make sure to add the version number to the file name after download.
+curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+```
+
+To download the latest version of ChromeDriver, check the recommendations mentioned here:
+https://chromedriver.chromium.org/downloads
+
+Again, make sure to add the version number to the file name after download.
 
 ### Build the images
 ```
