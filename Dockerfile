@@ -18,14 +18,14 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN yum install -y xorg-x11-server-Xvfb unzip zip
 
 WORKDIR /usr/tmp
-ADD google-chrome-stable-65.0.3325.181-1.x86_64.rpm /tmp
-RUN yum install -y /tmp/google-chrome-stable-65.0.3325.181-1.x86_64.rpm \
-    && rm /tmp/google-chrome-stable-65.0.3325.181-1.x86_64.rpm
+ADD google-chrome-stable_current_83.0.4103.116_x86_64.rpm /tmp
+RUN yum install -y /tmp/google-chrome-stable_current_83.0.4103.116_x86_64.rpm \
+    && rm /tmp/google-chrome-stable_current_83.0.4103.116_x86_64.rpm
 
 # Chromedriver
-RUN mkdir -p /root/tmp/chromedriver/2.37
-ADD chromedriver-2.37-linux64.zip /root/tmp/chromedriver/2.37/
-RUN unzip /root/tmp/chromedriver/2.37/chromedriver-2.37-linux64.zip -d /bin
+RUN mkdir -p /root/tmp/chromedriver/83
+ADD chromedriver_83.0.4103.39_linux64.zip /root/tmp/chromedriver/83/
+RUN unzip /root/tmp/chromedriver/83/chromedriver_83.0.4103.39_linux64.zip -d /bin
 RUN chmod -R 0755 /bin/chromedriver
 ENV PATH /bin/chromedriver:$PATH
 
