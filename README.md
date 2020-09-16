@@ -3,7 +3,7 @@
  - JDK 8
  - Maven
  - Make
- - Node 10.6.3
+ - Node 12.18.4
  - Yarn 1.17.3
  - gcc
  - Chrome
