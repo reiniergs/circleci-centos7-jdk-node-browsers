@@ -12,7 +12,7 @@ jobs:
       - deploy:
           name: Tag docker images
           command: |
-            docker tag reiniergs/centos7-jdk-node12-browsers:circle reiniergs/centos7-jdk-node8-browsers:latest
+            docker tag reiniergs/centos7-jdk-node12-browsers:circle reiniergs/centos7-jdk-node12-browsers:latest
       - deploy:
           name: Login to Docker Hub
           command: docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
