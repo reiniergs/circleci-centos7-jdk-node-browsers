@@ -3,8 +3,8 @@
  - JDK 8
  - Maven
  - Make
- - Node 12.18.4
- - Yarn 1.17.3
+ - Node 12.x
+ - Yarn
  - gcc
  - Chrome
  - gcc-c++
@@ -13,7 +13,7 @@
 
 - Git
 - Curl
-- Hub
+- Hub 2.12.7
 
 ## Working locally
 
